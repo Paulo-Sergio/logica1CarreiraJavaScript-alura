@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var pulaLinha = function () {
+                document.write("<br>");
+            };
+
+            var mostra = function (frase) {
+                document.write(frase);
+                pulaLinha();
+            };
+
+            //devolve um numero entre 0 e 100        
+            var numeroPensadoCasasDecimais = Math.random() * 100;
+            var numeroPensado = Math.round(numeroPensadoCasasDecimais);
+
+            var chute = prompt("Já pensei. Qual vc acha que é ?");
+
+            if (chute == numeroPensado) {
+                mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+            }else {
+                mostra("Putz! Você errou. Eu pensei no " + numeroPensado);
+            }
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
