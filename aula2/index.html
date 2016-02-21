@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var pulaLinha = function(){
+                document.write("<br>");
+            };
+            
+            var mostra = function(frase){
+                document.write(frase);
+                pulaLinha();
+            }
+            
+            var eu = 25;
+            var adriano = 26;
+            var paulo = 32
+            
+            var ano = 2016;
+            mostra("Eu nasci em : " + (ano - eu));
+            mostra("Adriano nasceu em : " + (ano - adriano));
+            mostra("Paulo nasceu em : " + (ano - paulo));
+            
+            var media = ((eu + adriano + paulo) / 3);
+            
+            mostra("Média das idades é : " + media);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
