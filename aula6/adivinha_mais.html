@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <input type="text" id="numero"/>
+        <input type="submit" value="Compare com o meu segredo!" id="adivinhar" />
+
+        <script>
+            var segredos = [16,34,37,42,50,58];
+            var caixaDoNumero = document.getElementById("numero");
+
+            var botaoClicado = function () {
+                var achou = false;
+                
+                for(var i = 0; i < segredos.length; i++){
+                    if(segredos[i] == caixaDoNumero.value){
+                        achou = true;
+                        break;
+                    }
+                }
+                if(achou == true){
+                    alert("Parabens! Voce acertou um dos numeros secretos");
+                }else{
+                    alert("Infelizmente você errou!")
+                }
+            };
+
+            var botaoAdvinhar = document.getElementById("adivinhar");
+            botaoAdvinhar.onclick = botaoClicado;
+        </script>
+    </body>
+</html>
