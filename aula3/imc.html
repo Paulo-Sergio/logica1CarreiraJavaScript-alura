@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var pulaLinha = function () {
+                document.write("<br>");
+            };
+
+            var mostra = function (frase) {
+                document.write(frase);
+                pulaLinha();
+            };
+
+            var calculaIMC = function (altura, peso) {
+                var imc = peso / (altura * altura);
+                return imc;
+            };
+
+            var meuIMC = calculaIMC(1.72, 75);
+            var IMCPrimo = calculaIMC(1.73, 83);
+            mostra("O IMC do meu primo é: " + IMCPrimo);
+            mostra("Ele ainda está " + (IMCPrimo - 18.5) + " pontos acima limite de magreza");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

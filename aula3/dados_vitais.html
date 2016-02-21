@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            var pulaLinha = function () {
+                document.write("<br>");
+            };
+
+            var mostra = function (frase) {
+                document.write(frase);
+                pulaLinha();
+            };
+
+            var nome = prompt("Bom dia! Qual é o seu nome?");
+            mostra("Bem vindo, " + nome);
+            var idade = prompt("Quantos anos vc tem ?");
+            mostra("Você tem " + idade + " anos");
+            
+            var dias = idade * 365;
+            mostra("Você já viveu "+ dias + "dias de vida!")
+            
+            var batimentos = dias * 24 * 60 * 80;
+            mostra("Seu coração já bateu " + batimentos + " vezes. Haja coração!");
+        </script>
+    </head>
+    <body>
+    </body>
+</html>
